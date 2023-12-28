@@ -34,7 +34,7 @@
     flex-wrap: wrap;
     gap: 10px;
     overflow: auto;
-
+    padding: 0px 5px;
 }
 .ContainerWithImage2{
     width: 100%;

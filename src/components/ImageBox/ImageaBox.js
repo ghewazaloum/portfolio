@@ -3,7 +3,7 @@ import './ImageBox.css';
 function ImageBox(){
     return(
         <div className="image-box">
-            <img src={ghewa} alt="daas hatweek"/>
+            <img src={ghewa} alt="ghewa zaloum"/>
         </div>
     );
 }
