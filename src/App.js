@@ -1,7 +1,9 @@
-import {ImageBox ,Information ,Headings, Cards,Shape ,HeadingWithoutIcon, InfoList, WorkCard} from './components/index';
+import {ImageBox ,Information ,Headings, Cards,Shape ,HeadingWithoutIcon, InfoList, WorkCard, Button, UnFocusedButton} from './components/index';
 import './App.css';
 import { Container , GlassContainer ,Navbar ,ContainerWithImage, CardContainer ,
   GlassContainerFlexColumn, ContainerWithImage2,Footer} from './sections/index';
+import wadiMed from './Assests/Images/wadiMed.png' ;
+import portfolio from './Assests/Images/portfolio.png' ;
 
 function App() {
   return (
@@ -90,9 +92,28 @@ function App() {
       <ContainerWithImage2>
         <HeadingWithoutIcon>work</HeadingWithoutIcon>
         <CardContainer>
-            <WorkCard/>
-            <WorkCard/>
-            <WorkCard/>
+            <WorkCard>
+              <div className='imageDiv'>
+                <img className='image' src={wadiMed} alt='alwadi medical center'/>
+              </div>
+              <h4>alWadi medical center web app</h4>
+              <div className='workButtons'>
+                  <Button href={"https://github.com/ghewazaloum/WadiMedicalCenter.git"}>github</Button>
+                  <Button href={"https://www.figma.com/file/g2QP6tQH5pGpR2gwjBkkts/medical-center?type=design&node-id=83%3A9&mode=design&t=nbUOqLubZyFsem70-1"}>Figma</Button>
+            </div>
+            </WorkCard>
+            <WorkCard>
+              <div className='imageDiv'>
+                <img className='image' src={portfolio} alt='alwadi medical center'/>
+              </div>
+              <h4>Portfolio</h4>
+              <div className='workButtons'>
+                  <Button href={"https://github.com/ghewazaloum/portfolio.git"}>github</Button>
+            </div>
+            </WorkCard>
+
+
+            
         </CardContainer>
       </ContainerWithImage2>
       <Footer/>

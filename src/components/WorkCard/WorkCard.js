@@ -1,11 +1,9 @@
 import './WorkCard.css'
 import {Button} from'../index'
-function WorkCard (){
+function WorkCard (props){
     return(
         <div className="WorkCard">
-            <div className='image'></div>
-            <h2>user interface</h2>
-            <Button>github</Button>
+            {props.children}
         </div>
     );
 }
